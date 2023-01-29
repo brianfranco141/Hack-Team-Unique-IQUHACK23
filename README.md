@@ -8,7 +8,5 @@ The first python quantum code, which is called step0_generate_random generate th
 
 * Step 1:
 
-we can use the previous generated seed to creat the excel file 
-
-The excel file is called sensor.xlsx
+we can use the previous generated seed to creat the excel file, the excel file is called sensor.xlsx
 
