@@ -43,8 +43,8 @@ def cost_function(last_time_limit, the_distance_limit, the_frequency_limit, df_n
   return the_matrix[:,0:2]
 ```
 
-<img src="https://github.com/mohadesehazari98/Hack-Team-Unique-IQUHACK23/blob/main/graph.png" align="right"
-     alt="Size Limit logo by Anton Lovchikov" width="120" height="178">
+<img src="https://github.com/mohadesehazari98/Hack-Team-Unique-IQUHACK23/blob/main/graph.png" align="center"
+     alt="Size Limit logo by Anton Lovchikov">
 * Step 2:
 
 The final state is where we use the actual quantum algorithm called QAOA, Quantum Approximate Optimization Algorithm
