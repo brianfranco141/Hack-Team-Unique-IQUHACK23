@@ -15,6 +15,14 @@ also the value.txt is the input file where you can determine how your cost funct
 the cost_function code will simulate different cost function based on all the different criteria that you find, each criteria can be activated with a flag that you can issue. So after changing each flag, you can go on and see the matrix, this way you can decide weather it is an acceptable graph or you need to filter further.
 The cost function can give you the optimized graph that you can use, as an input, to the actual quantum computer
 
+* Step 2:
+
+The final state is where we use the actual quantum algorithm called QAOA, Quantum Approximate Optimization Algorithm
+
+by running this, we will get the quantum state which will determine which nodes we need to delete, in order to destroy the whole graph connections
+
+
+
 
 
 
