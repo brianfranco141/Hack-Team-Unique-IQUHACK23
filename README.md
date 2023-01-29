@@ -4,6 +4,10 @@
 
 * Step 0:
 
+we need the data set as an excel file to generate the graph, but for now, since the data is not a big issue and we just want to check the algorithm, we are using Quantum Random number generatr to create the seed. 
+
+The first python quantum code, which is called step0_generate_random generate the text file, which is used as our initial seed to create a random excel file.
+
 ```js
 q = QuantumRegister(5,'q')
 c = ClassicalRegister(5,'c')
@@ -14,10 +18,6 @@ circuit.measure(q,c) # Measures all qubits
 backend = provider.get_backend('ibmq_qasm_simulator')
 job = execute(circuit, backend, shots=35)
 ```
-
-we need the data set as an excel file to generate the graph, but for now, since the data is not a big issue and we just want to check the algorithm, we are using Quantum Random number generatr to create the seed. 
-
-The first python quantum code, which is called step0_generate_random generate the text file, which is used as our initial seed to create a random excel file.
 
 * Step 1:
 
