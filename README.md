@@ -6,5 +6,9 @@ we need the data set as an excel file to generate the graph, but for now, since 
 
 The first python quantum code, which is called step0_generate_random generate the text file, which is used as our initial seed to create a random excel file.
 
+* Step 1:
 
+we can use the previous generated seed to creat the excel file 
+
+The excel file is called sensor.xlsx
 
