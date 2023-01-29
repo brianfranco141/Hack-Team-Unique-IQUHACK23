@@ -43,6 +43,7 @@ def cost_function(last_time_limit, the_distance_limit, the_frequency_limit, df_n
   return the_matrix[:,0:2]
 ```
 
+
 * Step 2:
 
 The final state is where we use the actual quantum algorithm called QAOA, Quantum Approximate Optimization Algorithm
