@@ -64,5 +64,7 @@ counts = backend.run(qc_res, seed_simulator=10).result().get_counts()
 plot_histogram(counts)
 ```
 
+<img src="https://github.com/mohadesehazari98/Hack-Team-Unique-IQUHACK23/blob/main/histogram.png" align="center"
+     alt="Size Limit logo by Anton Lovchikov">
 
 
