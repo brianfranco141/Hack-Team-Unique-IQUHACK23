@@ -4,18 +4,15 @@
 
 * Step 0:
 
-    ```diff
-    + "size-limit": [
-    +   {
-    +     "path": "dist/app-*.js"
-    +   }
-    + ],
-      "scripts": {
-        "build": "webpack ./webpack.config.js",
-    +   "size": "npm run build && size-limit",
-        "test": "jest && eslint ."
-      }
-    ```
+```js
+const sizeLimit = require('size-limit')
+const filePlugin = require('@size-limit/file')
+const webpackPlugin = require('@size-limit/webpack')
+
+sizeLimit([filePlugin, webpackPlugin], [filePath]).then(result => {
+  result //=> { size: 12480 }
+})
+```
 
 we need the data set as an excel file to generate the graph, but for now, since the data is not a big issue and we just want to check the algorithm, we are using Quantum Random number generatr to create the seed. 
 
