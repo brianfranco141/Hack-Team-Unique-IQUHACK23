@@ -20,6 +20,15 @@ backend = provider.get_backend('ibmq_qasm_simulator')
 job = execute(circuit, backend, shots=35)
 ```
 
+--------------------
+
+```js
+counts = job.result().get_counts()
+list_count = counts.items()
+for i in range(10):
+    decimal[0,i] = binaryToDecimal(binary[i])
+```
+
 * Step 1:
 
 we can use the previous generated seed to creat the excel file, the excel file is called sensor.xlsx
