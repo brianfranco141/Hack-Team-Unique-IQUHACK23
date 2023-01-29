@@ -1,6 +1,7 @@
 # Hack-Team-Unique-IQUHACK23
 
-<img src="[https://github.com/mohadesehazari98/Hack-Team-Unique-IQUHACK23/blob/main/duck_logo.svg]">
+<img src="https://github.com/mohadesehazari98/Hack-Team-Unique-IQUHACK23/blob/main/duck_logo.svg" align="right"
+     alt="Size Limit logo by Anton Lovchikov" width="120" height="178">
 
 * Step 0:
 
