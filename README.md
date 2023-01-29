@@ -51,8 +51,18 @@ The final state is where we use the actual quantum algorithm called QAOA, Quantu
 
 by running this, we will get the quantum state which will determine which nodes we need to delete, in order to destroy the whole graph connections
 
+```js
+from qiskit.visualization import plot_histogram
 
+backend = Aer.get_backend('aer_simulator')
+backend.shots = 512
 
+qc_res = create_qaoa_circ(G, res.x)
+
+counts = backend.run(qc_res, seed_simulator=10).result().get_counts()
+
+plot_histogram(counts)
+```
 
 
 
