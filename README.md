@@ -29,6 +29,20 @@ also the value.txt is the input file where you can determine how your cost funct
 the cost_function code will simulate different cost function based on all the different criteria that you find, each criteria can be activated with a flag that you can issue. So after changing each flag, you can go on and see the matrix, this way you can decide weather it is an acceptable graph or you need to filter further.
 The cost function can give you the optimized graph that you can use, as an input, to the actual quantum computer
 
+```js
+def cost_function(last_time_limit, the_distance_limit, the_frequency_limit, df_new):
+  the_matrix = df_new
+  if(last_time_limit==1):
+    the_matrix = [row for row in the_matrix if not row[2] > int(last_time_limit_value)]
+  if(the_distance_limit==1):
+    the_matrix = [row for row in the_matrix if not float(row[4]) > float(the_distance_limit_value)]
+  if(the_frequency_limit==1):
+    the_matrix = [row for row in the_matrix if not float(row[3]) < float(the_frequency_limit_value)]
+
+  Create_the_mat(the_matrix)  
+  return the_matrix[:,0:2]
+```
+
 * Step 2:
 
 The final state is where we use the actual quantum algorithm called QAOA, Quantum Approximate Optimization Algorithm
