@@ -1,6 +1,7 @@
 # Hack-Team-Unique-IQUHACK23
 
-<img src="[https://ai.github.io/size-limit/logo.svg](https://github.com/mohadesehazari98/Hack-Team-Unique-IQUHACK23/blob/main/duck.png)">
+<img src="[https://github.com/mohadesehazari98/Hack-Team-Unique-IQUHACK23/blob/main/duck_logo.svg]">
+
 * Step 0:
 
 
