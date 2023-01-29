@@ -4,6 +4,18 @@
 
 * Step 0:
 
+    ```diff
+    + "size-limit": [
+    +   {
+    +     "path": "dist/app-*.js"
+    +   }
+    + ],
+      "scripts": {
+        "build": "webpack ./webpack.config.js",
+    +   "size": "npm run build && size-limit",
+        "test": "jest && eslint ."
+      }
+    ```
 
 we need the data set as an excel file to generate the graph, but for now, since the data is not a big issue and we just want to check the algorithm, we are using Quantum Random number generatr to create the seed. 
 
