@@ -5,13 +5,14 @@
 * Step 0:
 
 ```js
-const sizeLimit = require('size-limit')
-const filePlugin = require('@size-limit/file')
-const webpackPlugin = require('@size-limit/webpack')
+q = QuantumRegister(5,'q')
+c = ClassicalRegister(5,'c')
+circuit = QuantumCircuit(q,c)
+circuit.h(q) # Applies hadamard gate to all qubits
+circuit.measure(q,c) # Measures all qubits 
 
-sizeLimit([filePlugin, webpackPlugin], [filePath]).then(result => {
-  result //=> { size: 12480 }
-})
+backend = provider.get_backend('ibmq_qasm_simulator')
+job = execute(circuit, backend, shots=35)
 ```
 
 we need the data set as an excel file to generate the graph, but for now, since the data is not a big issue and we just want to check the algorithm, we are using Quantum Random number generatr to create the seed. 
